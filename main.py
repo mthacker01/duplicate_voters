@@ -15,6 +15,12 @@ to_path = input('Path to store county files:  ')
 
 master_df = pd.read_excel(master_path)
 
+master_df = master_df[['NOTICE ID', 'COUNTY', 'VOTER ID', 'STATUS', 'REG DATE', 'LAST ACTION',
+       'LAST VOTED', 'LAST NAME', 'FIRST NAME', 'MIDDLE', 'STREET', 'CITY',
+       'ZIP', 'EMAIL',
+       'PHONE', 'VOTER ID 2', 'COUNTY 2', 'STATUS 2', 'REG DATE 2',
+       'LAST ACTION 2', 'LAST VOTE 2', 'LAST NAME 2', 'FIRST NAME 2',
+       'MIDDLE 2', 'ADDRESS 2', 'CITY 2', 'ZIP 2', 'EMAIL 2', 'PHONE 2']]
 
 for county in range(1, 121):
     primary_county = master_df[(master_df['COUNTY'] == county)]
