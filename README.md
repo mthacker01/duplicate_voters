@@ -1,1 +1,1 @@
-# duplicate_voters
+# Using the Duplicate Voter script
